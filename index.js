@@ -10,6 +10,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + 'index.html');
 });
 
-http.createServer(app).listen("imakerlab.club" || process.env.PORT, function(){
+http.createServer(app).listen(process.env.PORT, function(){
   console.log('Express server listening on port ' + process.env.PORT || 3000);
 });
